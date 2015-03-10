@@ -44,7 +44,22 @@ void test_node() {
 	}
 }
 
+void test_node2() {
+	std::vector<tmp_node1 *> node_vec;
+	std::vector<tmp_node1 *>::iterator it_vec;
+	tmp_node1 n1(0);
+	for (int i = 0; i < 5; i++) {
+		node_vec.push_back(&n1);
+		tmp_node1 *node = node_vec.back();
+		node->label = i;
+	}
+	for (it_vec = node_vec.begin(); it_vec != node_vec.end(); it_vec++) {
+		tmp_node1 *node = *it_vec;
+		std::cout << node->label << std::endl;
+	}
+}
+
 int main_test_cpp(int argc, char **argv) {
-	test_node();	
+	test_node2();	
 	return 0;
 }

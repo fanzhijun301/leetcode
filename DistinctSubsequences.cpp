@@ -33,7 +33,7 @@ void numDistinct_test_case1() {
 	cout << n << endl;
 }
 
-int main(int argc, char **argv) {
+int main_numDistinct(int argc, char **argv) {
 	numDistinct_test_case1();
 	return 0;
 }

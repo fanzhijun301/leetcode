@@ -30,7 +30,7 @@ void maxProfit1_test_case1() {
 	cout << mp << endl;
 }
 
-int main(int argc, char **argv) {
+int main_maxProfit1(int argc, char **argv) {
 	maxProfit1_test_case1();
 	return 0;
 }

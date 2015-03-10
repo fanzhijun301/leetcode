@@ -8,8 +8,8 @@ using namespace std;
 
 class Solution {
 public:
-    vector<string> wordBreak(string s, unordered_set<string> &dict) {
-		unordered_set<string>::iterator it_set;
+    vector<string> wordBreak(string s, set<string> &dict) {
+		set<string>::iterator it_set;
 		vector<vector<int> > pos_vec_vec;
 		vector<vector<int> >::iterator it_vec_vec;
 		vector<int> pos_vec; pos_vec.push_back(0);
@@ -76,7 +76,7 @@ void wordBreak2_test_case1() {
 	}
 }
 
-int main(int argc, char **argv) {
+int main_wordBreak2(int argc, char **argv) {
 	wordBreak2_test_case1();
 	return 0;
 }

@@ -71,7 +71,7 @@ void uniquePathsWithObstacles_test_case1() {
 	cout << unique_value << endl;
 }
 
-int main(int argc, char **argv) {
+int main_uniquePathsWithObstacles(int argc, char **argv) {
 	uniquePathsWithObstacles_test_case1();
 	return 0;
 }

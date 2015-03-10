@@ -127,7 +127,7 @@ void generateTrees_test_case1() {
 	cout << trees_vec.size() << endl;
 }
 
-int main(int argc, char **argv) {
+int main_uniqueBinarySearchTree2(int argc, char **argv) {
 	generateTrees_test_case1();
 	return 0;
 }

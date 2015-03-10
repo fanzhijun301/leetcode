@@ -40,7 +40,7 @@ void triangle_test_case1() {
 	cout << r << endl;
 }
 
-int main(int argc, char **argv) {
+int main_triangle(int argc, char **argv) {
 	triangle_test_case1();
 	return 0;
 }

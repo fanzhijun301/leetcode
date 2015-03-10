@@ -26,7 +26,7 @@ void uniquePaths_test_case1() {
 	cout << up << endl;
 }
 
-int main(int argc, char **argv) {
+int main_uniquePaths(int argc, char **argv) {
 	uniquePaths_test_case1();
 	return 0;
 }

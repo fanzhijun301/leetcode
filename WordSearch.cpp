@@ -190,7 +190,7 @@ bool wordSearch_test_case1(string find_s) {
 	return is_word;
 }
 
-int main(int argc, char **argv) {
+int main_wordSearch(int argc, char **argv) {
 	//string find_s = "ABCCED";
 	//string find_s = "SEE";
 	string find_s = "ABCB";

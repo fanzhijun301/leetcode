@@ -59,7 +59,19 @@ void test_node2() {
 	}
 }
 
+void test_sizeof() {
+	std::vector<int> abc_vec;
+	std::cout << sizeof(abc_vec) << std::endl;
+	for (int i = 0; i < 100; i++) abc_vec.push_back(i);
+	std::cout << sizeof(abc_vec) << std::endl;
+	std::vector<int> def_vec = abc_vec;
+	def_vec[0] = 100;
+	std::cout << sizeof(def_vec) << std::endl;
+	std::cout << "haha" << std::endl;
+
+}
+
 int main_test_cpp(int argc, char **argv) {
-	test_node2();	
+	test_sizeof();	
 	return 0;
 }

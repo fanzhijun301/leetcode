@@ -28,7 +28,7 @@ void lengthOfLastWord_test_case1() {
 	cout << len << endl;
 }
 
-int main(int argc, char **argv) {
+int main_lengthOfLastWord(int argc, char **argv) {
 	lengthOfLastWord_test_case1();
 	return 0;
 }

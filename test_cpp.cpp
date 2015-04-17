@@ -1,7 +1,11 @@
 #include <map>
 #include <iostream>
 #include <vector>
+#include <list>
+#include <set>
+#include <string>
 
+using namespace std;
 
 void test1() {
 	std::map<float, int> stat_map;
@@ -71,7 +75,29 @@ void test_sizeof() {
 
 }
 
+void test_list() {
+	std::list<int> a_list;
+	std::list<int>::iterator it_list;
+	for (int i = 0; i < 10; i++) a_list.push_back(i);
+	it_list = a_list.begin();
+	while (it_list != a_list.end()) {
+		it_list = a_list.erase(it_list);
+	}
+	std::cout << a_list.size() << std::endl;
+}
+
+void test_set() {
+    set<string> s_set;
+    set<string>::iterator it_set;
+    s_set.insert("abc");
+    s_set.insert("def");
+    it_set = s_set.find("abc");
+    if (it_set != s_set.end()) {
+        cout << "find" << endl;
+    }   
+}
+
 int main_test_cpp(int argc, char **argv) {
-	test_sizeof();	
+	test_set();	
 	return 0;
 }
